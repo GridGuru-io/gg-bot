@@ -1,0 +1,316 @@
+{
+  "races": [
+    {
+      "name": "LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025",
+      "keywords": ["australia", "melbourne", "australian"],
+      "location": "Melbourne, Australia",
+      "timezone": "Australia/Melbourne",
+      "sessions": {
+        "fp1": "2025-03-14T01:30:00Z",
+        "fp2": "2025-03-14T05:00:00Z",
+        "fp3": "2025-03-15T01:30:00Z",
+        "qualifying": "2025-03-15T05:00:00Z",
+        "gp": "2025-03-16T04:00:00Z"
+      }
+    },
+    {
+      "name": "HEINEKEN CHINESE GRAND PRIX 2025",
+      "keywords": ["china", "shanghai"],
+      "location": "Shanghai, China",
+      "timezone": "Asia/Shanghai",
+      "sessions": {
+        "fp1": "2025-03-21T03:30:00Z",
+        "sprintQualifying": "2025-03-21T07:30:00Z",
+        "sprint": "2025-03-22T03:00:00Z",
+        "qualifying": "2025-03-22T07:00:00Z",
+        "gp": "2025-03-23T07:00:00Z"
+      }
+    },
+    {
+      "name": "LENOVO JAPANESE GRAND PRIX 2025",
+      "keywords": ["japan", "suzuka"],
+      "location": "Suzuka, Japan",
+      "timezone": "Asia/Tokyo",
+      "sessions": {
+        "fp1": "2025-04-04T02:30:00Z",
+        "fp2": "2025-04-04T06:00:00Z",
+        "fp3": "2025-04-05T02:30:00Z",
+        "qualifying": "2025-04-05T06:00:00Z",
+        "gp": "2025-04-06T05:00:00Z"
+      }
+    },
+    {
+      "name": "GULF AIR BAHRAIN GRAND PRIX 2025",
+      "keywords": ["bahrain", "sakhir"],
+      "location": "Sakhir, Bahrain",
+      "timezone": "Asia/Bahrain",
+      "sessions": {
+        "fp1": "2025-04-11T11:30:00Z",
+        "fp2": "2025-04-11T15:00:00Z",
+        "fp3": "2025-04-12T12:30:00Z",
+        "qualifying": "2025-04-12T16:00:00Z",
+        "gp": "2025-04-13T15:00:00Z"
+      }
+    },
+    {
+      "name": "STC SAUDI ARABIAN GRAND PRIX 2025",
+      "keywords": ["saudi arabia", "jeddah"],
+      "location": "Jeddah, Saudi Arabia",
+      "timezone": "Asia/Riyadh",
+      "sessions": {
+        "fp1": "2025-04-18T13:30:00Z",
+        "fp2": "2025-04-18T17:00:00Z",
+        "fp3": "2025-04-19T13:30:00Z",
+        "qualifying": "2025-04-19T17:00:00Z",
+        "gp": "2025-04-20T17:00:00Z"
+      }
+    },
+    {
+      "name": "CRYPTO.COM MIAMI GRAND PRIX 2025",
+      "keywords": ["miami", "usa", "florida"],
+      "location": "Miami, Florida, USA",
+      "timezone": "America/New_York",
+      "sessions": {
+        "fp1": "2025-05-02T16:30:00Z",
+        "sprintQualifying": "2025-05-02T20:30:00Z",
+        "sprint": "2025-05-03T16:00:00Z",
+        "qualifying": "2025-05-03T20:00:00Z",
+        "gp": "2025-05-04T20:00:00Z"
+      }
+    },
+    {
+      "name": "AWS GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2025",
+      "keywords": ["italy", "imola"],
+      "location": "Imola, Italy",
+      "timezone": "Europe/Rome",
+      "sessions": {
+        "fp1": "2025-05-16T11:30:00Z",
+        "fp2": "2025-05-16T15:00:00Z",
+        "fp3": "2025-05-17T10:30:00Z",
+        "qualifying": "2025-05-17T14:00:00Z",
+        "gp": "2025-05-18T13:00:00Z"
+      }
+    },
+    {
+      "name": "TAG HEUER GRAND PRIX DE MONACO 2025",
+      "keywords": ["monaco"],
+      "location": "Monaco",
+      "timezone": "Europe/Monaco",
+      "sessions": {
+        "fp1": "2025-05-23T11:30:00Z",
+        "fp2": "2025-05-23T15:00:00Z",
+        "fp3": "2025-05-24T10:30:00Z",
+        "qualifying": "2025-05-24T14:00:00Z",
+        "gp": "2025-05-25T13:00:00Z"
+      }
+    },
+    {
+      "name": "ARAMCO GRAN PREMIO DE ESPAÑA 2025",
+      "keywords": ["spain", "spanish", "barcelona"],
+      "location": "Barcelona, Spain",
+      "timezone": "Europe/Madrid",
+      "sessions": {
+        "fp1": "2025-05-30T11:30:00Z",
+        "fp2": "2025-05-30T15:00:00Z",
+        "fp3": "2025-05-31T10:30:00Z",
+        "qualifying": "2025-05-31T14:00:00Z",
+        "gp": "2025-06-01T13:00:00Z"
+      }
+    },
+    {
+      "name": "PIRELLI GRAND PRIX DU CANADA 2025",
+      "keywords": ["canada", "montreal"],
+      "location": "Montreal, Quebec",
+      "timezone": "America/Toronto",
+      "sessions": {
+        "fp1": "2025-06-13T17:30:00Z",
+        "fp2": "2025-06-13T21:00:00Z",
+        "fp3": "2025-06-14T16:30:00Z",
+        "qualifying": "2025-06-14T20:00:00Z",
+        "gp": "2025-06-15T18:00:00Z"
+      }
+    },
+    {
+      "name": "MSC CRUISES AUSTRIAN GRAND PRIX 2025",
+      "keywords": ["austria", "spielberg"],
+      "location": "Spielberg, Austria",
+      "timezone": "Europe/Vienna",
+      "sessions": {
+        "fp1": "2025-06-27T11:30:00Z",
+        "fp2": "2025-06-27T15:00:00Z",
+        "fp3": "2025-06-28T10:30:00Z",
+        "qualifying": "2025-06-28T14:00:00Z",
+        "gp": "2025-06-29T13:00:00Z"
+      }
+    },
+    {
+      "name": "QATAR AIRWAYS BRITISH GRAND PRIX 2025",
+      "keywords": ["british", "silverstone", "england"],
+      "location": "Silverstone, England",
+      "timezone": "Europe/London",
+      "sessions": {
+        "fp1": "2025-07-04T11:30:00Z",
+        "fp2": "2025-07-04T15:00:00Z",
+        "fp3": "2025-07-05T10:30:00Z",
+        "qualifying": "2025-07-05T14:00:00Z",
+        "gp": "2025-07-06T14:00:00Z"
+      }
+    },
+    {
+      "name": "MOËT & CHANDON BELGIAN GRAND PRIX 2025",
+      "keywords": ["belgium", "spa"],
+      "location": "Spa-Francorchamps, Belgium",
+      "timezone": "Europe/Brussels",
+      "sessions": {
+        "fp1": "2025-07-25T10:30:00Z",
+        "sprintQualifying": "2025-07-25T14:30:00Z",
+        "sprint": "2025-07-26T10:00:00Z",
+        "qualifying": "2025-07-26T14:00:00Z",
+        "gp": "2025-07-27T13:00:00Z"
+      }
+    },
+    {
+      "name": "LENOVO HUNGARIAN GRAND PRIX 2025",
+      "keywords": ["hungary", "budapest"],
+      "location": "Budapest, Hungary",
+      "timezone": "Europe/Budapest",
+      "sessions": {
+        "fp1": "2025-08-01T11:30:00Z",
+        "fp2": "2025-08-01T15:00:00Z",
+        "fp3": "2025-08-02T10:30:00Z",
+        "qualifying": "2025-08-02T14:00:00Z",
+        "gp": "2025-08-03T13:00:00Z"
+      }
+    },
+    {
+      "name": "HEINEKEN DUTCH GRAND PRIX 2025",
+      "keywords": ["dutch", "netherlands", "zandvoort"],
+      "location": "Zandvoort, Netherlands",
+      "timezone": "Europe/Amsterdam",
+      "sessions": {
+        "fp1": "2025-08-29T10:30:00Z",
+        "fp2": "2025-08-29T14:00:00Z",
+        "fp3": "2025-08-30T09:30:00Z",
+        "qualifying": "2025-08-30T13:00:00Z",
+        "gp": "2025-08-31T13:00:00Z"
+      }
+    },
+    {
+      "name": "PIRELLI GRAN PREMIO D’ITALIA 2025",
+      "keywords": ["italy", "monza"],
+      "location": "Monza, Italy",
+      "timezone": "Europe/Rome",
+      "sessions": {
+        "fp1": "2025-09-05T11:30:00Z",
+        "fp2": "2025-09-05T15:00:00Z",
+        "fp3": "2025-09-06T10:30:00Z",
+        "qualifying": "2025-09-06T14:00:00Z",
+        "gp": "2025-09-07T13:00:00Z"
+      }
+    },
+    {
+      "name": "QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025",
+      "keywords": ["azerbaijan", "baku"],
+      "location": "Baku, Azerbaijan",
+      "timezone": "Asia/Baku",
+      "sessions": {
+        "fp1": "2025-09-19T08:30:00Z",
+        "fp2": "2025-09-19T12:00:00Z",
+        "fp3": "2025-09-20T08:30:00Z",
+        "qualifying": "2025-09-20T12:00:00Z",
+        "gp": "2025-09-21T11:00:00Z"
+      }
+    },
+    {
+      "name": "SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025",
+      "keywords": ["singapore", "marina bay"],
+      "location": "Marina Bay, Singapore",
+      "timezone": "Asia/Singapore",
+      "sessions": {
+        "fp1": "2025-10-03T09:30:00Z",
+        "fp2": "2025-10-03T13:00:00Z",
+        "fp3": "2025-10-04T09:30:00Z",
+        "qualifying": "2025-10-04T13:00:00Z",
+        "gp": "2025-10-05T12:00:00Z"
+      }
+    },
+    {
+      "name": "MSC CRUISES UNITED STATES GRAND PRIX 2025",
+      "keywords": ["usa", "united states", "dallas", "texas"],
+      "location": "Dallas, Texas, USA",
+      "timezone": "America/Chicago",
+      "sessions": {
+        "fp1": "2025-10-17T17:30:00Z",
+        "sprintQualifying": "2025-10-17T21:30:00Z",
+        "sprint": "2025-10-18T17:00:00Z",
+        "qualifying": "2025-10-18T21:00:00Z",
+        "gp": "2025-10-19T19:00:00Z"
+      }
+    },
+    {
+      "name": "GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025",
+      "keywords": ["mexico", "mexico city"],
+      "location": "Mexico City, Mexico",
+      "timezone": "America/Mexico_City",
+      "sessions": {
+        "fp1": "2025-10-24T17:30:00Z",
+        "fp2": "2025-10-24T21:00:00Z",
+        "fp3": "2025-10-25T16:30:00Z",
+        "qualifying": "2025-10-25T20:00:00Z",
+        "gp": "2025-10-26T19:00:00Z"
+      }
+    },
+    {
+      "name": "MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025",
+      "keywords": ["brazil", "sao paulo"],
+      "location": "Sao Paulo, Brazil",
+      "timezone": "America/Sao_Paulo",
+      "sessions": {
+        "fp1": "2025-11-07T14:30:00Z",
+        "sprintQualifying": "2025-11-07T18:30:00Z",
+        "sprint": "2025-11-08T14:00:00Z",
+        "qualifying": "2025-11-08T18:00:00Z",
+        "gp": "2025-11-09T17:00:00Z"
+      }
+    },
+    {
+      "name": "HEINEKEN LAS VEGAS GRAND PRIX 2025",
+      "keywords": ["las vegas", "usa", "nevada"],
+      "location": "Las Vegas, Nevada, USA",
+      "timezone": "America/Los_Angeles",
+      "sessions": {
+        "fp1": "2025-11-21T00:30:00Z",
+        "fp2": "2025-11-21T04:00:00Z",
+        "fp3": "2025-11-22T00:30:00Z",
+        "qualifying": "2025-11-22T04:00:00Z",
+        "gp": "2025-11-23T04:00:00Z"
+      }
+    },
+    {
+      "name": "QATAR AIRWAYS QATAR GRAND PRIX 2025",
+      "keywords": ["qatar", "lusail"],
+      "location": "Lusail, Qatar",
+      "timezone": "Asia/Qatar",
+      "sessions": {
+        "fp1": "2025-11-28T13:30:00Z",
+        "sprintQualifying": "2025-11-28T17:30:00Z",
+        "sprint": "2025-11-29T14:00:00Z",
+        "qualifying": "2025-11-29T18:00:00Z",
+        "gp": "2025-11-30T16:00:00Z"
+      }
+    },
+    {
+      "name": "ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025",
+      "keywords": ["abu dhabi", "uae", "yas marina"],
+      "location": "Yas Marina, Abu Dhabi",
+      "timezone": "Asia/Dubai",
+      "sessions": {
+        "fp1": "2025-12-05T09:30:00Z",
+        "fp2": "2025-12-05T13:00:00Z",
+        "fp3": "2025-12-06T10:30:00Z",
+        "qualifying": "2025-12-06T14:00:00Z",
+        "gp": "2025-12-07T13:00:00Z"
+      }
+    }
+  ]
+}
