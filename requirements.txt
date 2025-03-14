@@ -1,8 +1,8 @@
 discord.py
+asyncpg
 python-dotenv
 fuzzywuzzy
 python-Levenshtein
 pytz
-aiosqlite
 requests
 Flask
