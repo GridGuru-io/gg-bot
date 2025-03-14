@@ -24,7 +24,7 @@ def cached_find_closest_race(input_text):
 BOT_OWNER_ID = 88645942089117696  # Replace with your Discord ID
 
 # API keys and tokens from .env
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHERMAP_API_KEY")
 WEATHERAPI_API_KEY = os.getenv("WEATHERAPI_API_KEY")
 OPENCAGE_API_KEY = os.getenv("OPENCAGE_API_KEY")
