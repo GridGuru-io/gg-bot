@@ -29,9 +29,10 @@ OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHERMAP_API_KEY")
 WEATHERAPI_API_KEY = os.getenv("WEATHERAPI_API_KEY")
 OPENCAGE_API_KEY = os.getenv("OPENCAGE_API_KEY")
 CENTRAL_REPORT_WEBHOOK = os.getenv("CENTRAL_REPORT_WEBHOOK")
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-DATABASE_URL = f"postgresql://postgres:{SUPABASE_KEY}@{SUPABASE_URL}:5432/postgres"
+SUPABASE_HOST = os.getenv("SUPABASE_HOST")
+SUPABASE_USER = os.getenv("SUPABASE_USER")
+SUPABASE_PASSWORD = os.getenv("SUPABASE_PASSWORD")
+DATABASE_URL = f"postgresql://{SUPABASE_USER}:{SUPABASE_PASSWORD}@{SUPABASE_HOST}:5432/postgres"
 # Donation links
 DONATION_LINKS = {
     "Ko-fi": "https://ko-fi.com/gridguru",
@@ -99,7 +100,7 @@ CATEGORY_DISPLAY_NAMES = {
 
 # Database pool
 async def create_db_pool():
-    return await asyncpg.create_pool(DATABASE_URL)
+    return await asyncpg.create_pool(DATABASE_URL, ssl='require')
 
 async def init_db(pool):
     async with pool.acquire() as conn:
@@ -478,7 +479,7 @@ async def checkreminderchannel(ctx):
 @bot.command()
 async def reminder(ctx, *, search_term: str):
     search_term = search_term.strip().lower()
-    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]
+    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]]
     if not matching_events:
         await ctx.send(f"No events found matching '{search_term}'.")
         return
@@ -531,7 +532,7 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def weather(ctx, *, search_term: str):
     search_term = search_term.strip().lower()
-    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]
+    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]]
     if not matching_events:
         await ctx.send(f"No events found matching '{search_term}'.")
         return
