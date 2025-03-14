@@ -479,7 +479,7 @@ async def checkreminderchannel(ctx):
 @bot.command()
 async def reminder(ctx, *, search_term: str):
     search_term = search_term.strip().lower()
-    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]]
+    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]
     if not matching_events:
         await ctx.send(f"No events found matching '{search_term}'.")
         return
@@ -532,7 +532,7 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def weather(ctx, *, search_term: str):
     search_term = search_term.strip().lower()
-    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]]
+    matching_events = [e for e in f1_calendar if search_term in e["name"].lower() or search_term in e.get("keywords", [])]
     if not matching_events:
         await ctx.send(f"No events found matching '{search_term}'.")
         return
