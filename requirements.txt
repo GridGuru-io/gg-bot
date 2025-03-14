@@ -6,3 +6,4 @@ python-Levenshtein
 pytz
 requests
 Flask
+aiohttp
