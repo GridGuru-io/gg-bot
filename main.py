@@ -13,6 +13,7 @@ from discord.errors import Forbidden
 from functools import lru_cache
 import os
 from dotenv import load_dotenv
+from aiohttp import web  # Add this import
 
 # Load environment variables
 load_dotenv()
@@ -341,14 +342,35 @@ def get_closest_team(input_name):
     return None
 
 # Bot events
+
+# Web server for UptimeRobot
+async def handle_ping(request):
+    return web.Response(text="Bot is alive!")
+
+async def start_web_server():
+    app = web.Application()
+    app.add_routes([web.get('/', handle_ping)])
+    runner = web.AppRunner(app)
+    await runner.setup()
+    port = int(os.getenv("PORT", 8080))  # Use Render's PORT env var or default to 8080
+    site = web.TCPSite(runner, '0.0.0.0', port)
+    await site.start()
+    print(f"Web server started on port {port}")
+
 @bot.event
 async def on_ready():
-    bot.db_pool = await create_db_pool()
-    await init_db(bot.db_pool)
-    print(f'Logged in as {bot.user}')
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="!help | Donate: https://ko-fi.com/gridguru"))
-    session_reminder.start()
-    prediction_reminder.start()
+    try:
+        bot.db_pool = await create_db_pool()
+        await init_db(bot.db_pool)
+        print(f'Logged in as {bot.user}')
+        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="!help | Donate: https://ko-fi.com/gridguru"))
+        session_reminder.start()
+        prediction_reminder.start()
+        await start_web_server()  # Start the web server
+    except Exception as e:
+        print(f"Failed to initialize bot: {e}")
+        raise
+
 
 @tasks.loop(minutes=1)
 async def prediction_reminder():
@@ -1180,5 +1202,9 @@ async def validatepredictions(ctx, user: discord.Member = None):
         embed.description = "No predictions to validate"
     await ctx.send(embed=embed)
 
-# Run the bot
-bot.run(BOT_TOKEN)
+# Run the bot and web server
+async def main():
+    await bot.start(BOT_TOKEN)
+
+if __name__ == "__main__":
+    asyncio.run(main())
