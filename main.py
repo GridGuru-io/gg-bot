@@ -12,29 +12,32 @@ import re
 from discord.errors import Forbidden
 from functools import lru_cache
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 @lru_cache(maxsize=100)
 def cached_find_closest_race(input_text):
     return find_closest_race(input_text, f1_calendar)
 
 BOT_OWNER_ID = 88645942089117696  # Replace with your Discord ID
-CENTRAL_REPORT_WEBHOOK = "https://discord.com/api/webhooks/1346235701511065623/RRj55svzF1WUYiwqWRSmx6BHB-A0tioXqRzqfDL8lx7l_FdyYzXRG5F_Y9E5sLDr1ep3"
 
-# API keys
-OPENWEATHERMAP_API_KEY = "c4a1b7e5d391c0fc44e92cb00b4899d0"
-WEATHERAPI_API_KEY = "95088d11eeae4f5c80c40858250203"
-OPENCAGE_API_KEY = "acdc9dd04c0845f19083f2761f0a8e6a"
-
+# API keys and tokens from .env
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHERMAP_API_KEY")
+WEATHERAPI_API_KEY = os.getenv("WEATHERAPI_API_KEY")
+OPENCAGE_API_KEY = os.getenv("OPENCAGE_API_KEY")
+CENTRAL_REPORT_WEBHOOK = os.getenv("CENTRAL_REPORT_WEBHOOK")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+DATABASE_URL = f"postgresql://postgres:{SUPABASE_KEY}@{SUPABASE_URL}:5432/postgres"
 # Donation links
 DONATION_LINKS = {
     "Ko-fi": "https://ko-fi.com/gridguru",
     "Buy Me a Coffee": "https://www.buymeacoffee.com/gridguru"
 }
 
-# Supabase configuration (replace with your credentials)
-SUPABASE_URL = os.getenv("SUPABASE_URL", "your-supabase-url")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "your-supabase-key")
-DATABASE_URL = f"postgresql://postgres:Marsupial_2709@db.owtqjpejwdjzskblbbqt.supabase.co:5432/postgres"
 
 # Load F1 calendar
 def load_f1_calendar():
@@ -1177,4 +1180,4 @@ async def validatepredictions(ctx, user: discord.Member = None):
     await ctx.send(embed=embed)
 
 # Run the bot
-bot.run('MTMzNTk0Nzk4NjI3MzgyODkzNA.GCl4mv.X9Ta9bheKjiFsaKL5MoZ7SSsKUbhBPn6orZa2M')
+bot.run(BOT_TOKEN)
